@@ -1,0 +1,52 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="../d3plus.v2.js"></script>
+
+<body>
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+</style>
+</head>
+</body>
+
+<script>
+
+ var data = [
+ 
+  {id: "Black", x: "Arlington", y: 969},
+  {id: "Black", x: "Washgionton DC", y: 22452},
+  {id: "Black", x: "Montegomery", y: 15548},
+  {id: "Black", x: "Fairfax", y: 11515},
+  {id: "Black", x: "Prince George", y: 75446},
+
+  {id: "Hispanic", x: "Arlington", y: 2283},
+  {id: "Hispanic", x: "Montegomery", y: 12353},
+  {id: "Hispanic", x: "Washgionton DC",y: 2262},
+  {id: "Hispanic", x: "Fairfax", y: 14321,},
+  {id: "Hispanic", x: "Prince George", y: 6374},
+
+  {id: "Native American", x: "Arlington", y: 17},
+  {id: "Native American", x: "Montegomery", y: 13},
+  {id: "Native American", x: "Washgionton DC",y: 13},
+  {id: "Native American", x: "Fairfax", y: 13},
+  {id: "Native American", x: "Prince George", y: 13},
+
+  {id: "Asian", x: "Arlington", y: 897},
+  {id: "Asian", x: "Montegomery", y: 486},
+  {id: "Asian", x: "Fairfax", y: 16256},
+  {id: "Asian", x: "Prince George", y: 3373},
+//tried to change color for "white"....how?
+  {id: "White", x: "Arlington", y:  12313},
+  {id: "White", x: "Washgionton DC", y: 11888},
+  {id: "White", x: "Montegomery", y:  103502},
+  {id: "White", x: "Fairfax", y:  130299},
+  {id: "White", x: "Prince George", y:  26285},
+];
+
+new d3plus.BarChart()
+  .data(data)
+  .stacked(true)
+  .render();
+</script>
