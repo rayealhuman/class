@@ -1,0 +1,38 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="../d3plus.v2.js"></script>
+
+<body>
+
+  <hi>Total Population by Race</hi>
+
+</body>
+
+<script>
+
+const myData = [
+  {"Race": "White", "Total":183830, "Population Percentage": 30},
+  {"Race": "African American", "Total":395781, "Population Percentage": 64},
+  {"Race": "Asian", "Total":14548,"Population Percentage": 2},
+  {"Race": "Other", "Total":11303,"Population Percentage": 2},
+  {"Race": "American Indian Health Center Patients", "Total":2270,"Population Percentage": 5}
+];
+
+new d3plus.Pie()
+  .config({
+    data: myData,
+    groupBy: "Race",
+    value: function(d) {
+      return d["Population Percentage"];
+    },
+    tooltipConfig: {
+      tbody: [
+        ["Total", function(d) { return d["Total"] }]
+        ]
+      }
+
+  })
+  .render();
+
+</script>
