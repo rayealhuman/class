@@ -3,56 +3,143 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Baltimore</title>
+  <title>Washington D.C.</title>
     <style>
-        h1 {text-align:center;}
-        p {text-align:center;}
+      body {font: 15px/1.5 arial, helvetica, sans-serif;}
+      h1 {text-align:center;}
     </style>
 </head>
 
+
 <body>
 
-  <h1>Title</h1>
+  <div align ="center">
+  <h1>Is Washington DC a divided neighborhood?</h1>
+  <a href="img/DSC02433.JPG">Student Cheering Prof.Vanky</a>
+  <table align="center">
+    <tr>
+      <th>Number of Children <br> 
+      for White Children in High Income Family</th>
+      <th>Number of Children <br> 
+      for Black Children in High Income Family</th>
+    </tr>
+    <tr>
+      <td><img src="img/map1.png" width="420" height="350" align="left"></td>
+      <td><img src="img/map2.png" width="420" height="350" align="left"></td>
+    </tr>
+    <tr>
+      <th>Number of Children <br>
+      for White Children in Low Income Family</th>
+      <th>Number of Children <br>
+      for Black Children in Low Income Family</th>
+    </tr>
+    <tr>
+      <td><img src="img/map3.png" width="420" height="350" align="left"></td>
+      <td><img src="img/map4.png" width="420" height="350" align="left"></td>
+    </tr>
+  </table><!-- captions of atalas for comparison-->
 
-<ol>
-  <li>list 1</li>
-  <li>list 2</li>
-</ol>
+  </div>
+      <body align="center"><b>Source:</b>https://www.opportunityatlas.org</body>
 
-</ul>
+<hr> 
 
-  <nav>
-    <ul>
-      <li><a href="getting_started.html">Getting Started</a></li>
-    </ul>
-    <ul>
-      <li>Single Variable Visualizations
-        <ul>
-          <li><a href="viz/Total Number of Children.html">Total Number of Children</a></li>
-          <li><a href="viz/HI_HH_Children.html">Total Number of Children in High Income Household</a></li>
-          <li><a href="viz/LI_HH_Children.html">Total Number of Children in Low Income Household</a></li>
-          <li><a href="viz/Pie.html">Pie Chart</a></li>
-          <li><a href="viz/Tree.html">Tree</a></li>
-          <li><a href="viz/TotalPopulationbyRace.html">Total Populatio by Race</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li>Multiple Variable Visualization
-        <ul>
-          <li><a href="viz/Plot.html">Plot</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li>Complex Visualizations
-        <ul>
-          <li><a href="viz/Priestley.html">Priestley</a></li>
-          <li><a href="viz/Geomap.html">Geo Map</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <div align="center">
+        <h2><a>Total Number of Children </a></h2>
+            <p align="left">
+              Washington, DC, the U.S. capital, borders the states of Maryland and Virginia. "DMV"--a loosely defined metropolitan area, is one of the most educated and most affluent metropolitan areas in the US (Washingtonpost, 2006). Among all four, Montgomery County and Prince George County are in Maryland, and Arlington County and Fairfax County are in Virginia. Many people who work in DC choose to live in one of these four counties. Some families intentionally choose to live in certain counties versus the others, but some don't have any choice but stay. Below is a Treemap that measures the percentage of children in these areas. It is obvious that Fairfax has the majority number of children, possibly for its size. One can see similiar results for Montgomery County and Prince George County. The percentage is calculated by dividing the number of children living in that county by the summed total of 5 areas. 
+            </p>
+        <iframe src="viz/Total Number of Children.html" 
+                width="840" height="300"
+                scrolling="yes" align="center"
+                align="top" frameborder="0">       
+        </iframe><!--total number of children-->
+  </div>
+   
+<hr>
+
+  <div align="center">
+        <h2>Total Number of Children in High and Low Income Household </a></h2>
+            <p align="left">
+              Fairfax, Prince George, and Montgomery counties holds more than 90% of children in this region. However, when the total number starts to be broken down, in this case, into income levels, the percentage of children of each county changed. Many children who are from Low Income Households live in Washington D.C. D.C.--a much smaller region comparing to Fairfax, Prince George, or Montogomery, is the home for 24% of kids from low income families, exceeding that of Fairfax.  Furthermore, a more detailed visualization displayed a more detailed demographic make-up of each county. On the one hand, it shows that more children in white comes from High Income Households comparing to all other races. On the other, in low income households, there are more black and native american children. 
+            </p>
+        <table>
+          <tr>
+            <th>Total Number of Children in High Income Household</th>
+            <th>Total Number of Children in Low Income Household</th>
+          </tr>
+          <tr>
+            <td><iframe src="viz/HI_HH_Children.html" width="630" height="300" scrolling="yes" align="left" frameborder="0"></iframe></td>
+            <td><iframe src="viz/LI_HH_Children.html" width="630" height="300" scrolling="yes" align="right" frameborder="0"></iframe></td>
+          </tr>
+        </table>  
+        <p>click the legend to see individual result for each county</p>
+  </div> <!--two vizs of high and low income households -->
+<hr>
+  <div>
+        <table>
+          <tr>
+            <th>Demographics of the Five Counties, High Income Households </th>
+            <th>Demographics of the Five Counties, Low Income Households </th>
+          </tr>
+          <tr>
+            <td><iframe src="viz/Demographics.html" width="630" height="700" scrolling="no" align="left" frameborder="0"></iframe></td>
+            <td><iframe src="viz/Demographics_LowIH.html" width="630" height="700" scrolling="yes" align="right" frameborder="0"></iframe></td>
+          </tr>
+        </table>  
+        <p>click the legend to see individual result for each race</p>
+  </div>
+
+    <hr>
+    
+  <div align="center">
+        <h1><a align= "left">What are the opportunities missing for these kids? </a></h2>
+        <table>
+          <tr>
+            <th align="left">High School Graduation Rate in High Income Household</th>
+            <th align="left">High School Graduation Rate in Low Income Household</th>
+          </tr>
+          <tr>
+            <td><iframe src="viz/HS Graduation Rate_HI.html" width="600" height="400" scrolling="no" align="left" frameborder="0"></iframe></td>
+            <td><iframe src="viz/HS Graduation Rate_LI.html" width="600" height="400" scrolling="no" align="right" frameborder="0"></iframe></td>
+          </tr>
+        </table>
+  <img src="img/DC.jpg" width="130" height="150" align="center">
+           <table>
+<!--1-->      <tr>
+              <th></th>
+              <th>List of FY 2019-20 Education Budget </th>
+              <th>DC Public School STAR Rating</th>
+              </tr>
+<!--2-->      <tr>
+              <td style="width:40%"><p>
+            In conclusion, Washington D.C is a very divided neighborhood. The division is shown through demographic characteristic, and the distribution of resources. Comparing to the north D.C., the west-side has better schools. However, the majority of children living in that area are white and from high income households. Minority race children or children who are born in low income households are missing the opportunities of accessing those schools. Even if there was a rare chance for them to go to better schools, they have to spent more time in traffic. From the interactive barplot, it is easy to see some groups have much lower High School completion rate. In the future, I would like to study more on the weekly working hours and income outcomes among diffrent racial groups. I am interested in looking at how these outcomes are correlated with the socialeconomic characters of one's childhool living environment. 
+            The OpportunityAtalas is a great data platform to study inequality among neighborhoods and different residential groups.The plots created in on this website were created using data from the OpportunityAtalas. It did not take long to understand how it functions--such as how to downloading data and recreating visualizations from it. One thing that is worth noticing is its subcategories of race. The census data, in recent years, have improved its categorization system, thus become more inclusive and more accurate, as well as less confusing for the users. I recommend opportunityatalas to do the same. </p>
+              </td>
+              <td><ul align="left">
+                  <li> Washginton DC--753.4 Million</li>
+                  <li> Montgomery County--2.66 Billion</li>
+                  <li> Prince George's County--2.18 Billion</li>
+                  <li> Arlington County--669.6 Million</li>
+                  <li> Fairfax County--3 Billion</li>
+                  <p align="right" style="width:60%, fontsize:60%"><i>
+              From this mapwe can see that Wards 7 and 8 are located in the SouthEast of DC, the only Wards that don't have schools rated 4 or 5 STAR<sup>*</sup>. In fact, many struggling schools are located in the East side of DC, where most children in black are.</i></p>
+                  </ul>
+              </td>
+              <td><img src="img/SchoolRating.png",  width="400" height="450" align="right"></td>
+            </tr>
+          </table>
+  </div>
+  <p><sup>*</sup> According to OSSE, STAR Framework ratings are designed to help celebrate successes, focus discussions, identify areas for support, and inform strategic planning. Below is a distribution of the School level STAR ratings for all schools within the LEA.<br>
+    <p><b>Other Source:</b>"DC Public School STAR Rating", https://dcps.dc.gov/sites/default/files/dc/sites/dcps/page_content/attachments/FY20%20Budget_Public%20Deck.pdf</p>
+    <a href="ttps://www.montgomeryschoolsmd.org/budget-101/index.html">Montgomery School Budget</a>
+    <a href="https://dcps.dc.gov/page/budget-and-finance"> DC School Budget</a>
+    <a href="https://www.pgcps.org/budget/"> Prince George School Budget</a>
+    <a href="https://www.apsva.us/post/school-board-approves-proposed-fy-2020-budget/">Arlington School Budget</a>
+    <a href="https://www.fcps.edu/about-fcps/budget"> Fairfax School Budget</a>
+    <a href="https://www.washingtonpost.com/wp-dyn/content/article/2006/06/08/AR2006060800133.html">WashingtonPost</a>
+    <p>Created by Yuning Feng, November 4th 2019</p>
+
 </body>
 
 </html>

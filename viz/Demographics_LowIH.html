@@ -1,0 +1,56 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="../d3plus.v2.js"></script>
+
+<body>
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+</style>
+</head>
+
+
+<script>
+
+ var data = [
+ 
+  {id: "Black", x: "Arlington", y: 2570},
+  {id: "Black", x: "Washgionton DC", y: 62947},
+  {id: "Black", x: "Montegomery", y: 21475},
+  {id: "Black", x: "Fairfax", y: 11880},
+  {id: "Black", x: "Prince George", y: 73435},
+
+  {id: "Hispanic", x: "Arlington", y: 6882},
+  {id: "Hispanic", x: "Montegomery", y: 18871},
+  {id: "Hispanic", x: "Washgionton DC",y: 9166},
+  {id: "Hispanic", x: "Fairfax", y: 17607},
+  {id: "Hispanic", x: "Prince George", y: 11707},
+
+  {id: "Native American", x: "Arlington", y: 2570},
+  {id: "Native American", x: "Montegomery", y: 21475},
+  {id: "Native American", x: "Washgionton DC",y: 62947},
+  {id: "Native American", x: "Fairfax", y:11880},
+  {id: "Native American", x: "Prince George", y: 73435},
+
+  {id: "Asian", x: "Arlington", y: 1702},
+  {id: "Asian", x: "Washgionton DC", y: 1235},
+  {id: "Asian", x: "Montegomery", y: 10144},
+  {id: "Asian", x: "Fairfax", y: 15445},
+  {id: "Asian", x: "Prince George", y: 2795},
+
+//tried to change color for "white"....how?
+  {id: "White", x: "Arlington", y:  1984},
+  {id: "White", x: "Washgionton DC", y: 1807},
+  {id: "White", x: "Montegomery", y:  15973},
+  {id: "White", x: "Fairfax", y:  15959},
+  {id: "White", x: "Prince George", y:  7618},
+];
+
+
+
+new d3plus.BarChart()
+  .data(data)
+  .stacked(true)
+  .render();
+</script>

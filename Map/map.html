@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>RATS! It's rats!</title>
+
+
+<!--
+
+This HTML is part of a larger exercise, where the directions can be found
+in the index.html page in this folder.
+Don't forget to create a local server and point it here.
+
+ -->
+
+<!-- We call up the Leaflet library here... -->
+
+  <link rel="stylesheet" href="./leaflet/leaflet.css"/>
+  <script src="./leaflet/leaflet.js"></script>
+  <style>
+    #map{ height: 100% }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <!--
+      Script to load the tiles is bracketted by <script>, calling up Leaflet
+      More tiles can be found at https://wiki.openstreetmap.org/wiki/Tiles
+      or http://leaflet-extras.github.io/leaflet-providers/preview/
+  -->
+
+  <script>
+
+  var map = L.map('map').setView([38.9082, -77.0257], 12);
+
+  L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
+    {
+      attribution: '© Openstreetmap | © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+  </script>
+</body>
+</html>
